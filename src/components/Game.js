@@ -11,22 +11,18 @@ const style = {
 
 class Game extends Component {
     
- 
   render(){
        const template = this.props.emptyArray.map((num, i) => {
         return <span key={i} onClick = {() => this.props.unselectNumbers(num)}>{num}</span>
-       })
-       
-     
-      
+    })
 
       return(
           <div className="App">
               <div style={style}>{template}</div>
           </div>
-      )
-  }
-}
+        )
+    }
+};
     
-    export default Game;
+export default Game;
 

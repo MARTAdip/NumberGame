@@ -17,15 +17,13 @@ class Numbers extends Component {
     }
 
     render(){
-        let numberOutput = this.props.arrayOfNumbers && this.props.arrayOfNumbers.map((item, i) => <span key={i} onClick = {() => this.props.numbersClickHandler(item)} className={this.checkClassName(item)}>{item}</span> )
-             
-        
+        let numberOutput = this.props.arrayOfNumbers && this.props.arrayOfNumbers.map((item, i) => <span key={i} onClick = {() => this.props.numbersClickHandler(item)} className={this.checkClassName(item)}>{item}</span> )    
         return(
             <div style={style}>
                 {numberOutput}
             </div>
         )
     }
-}
+};
 
 export default Numbers;

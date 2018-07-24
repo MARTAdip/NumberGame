@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-
 import Game from './components/Game';
 import Numbers from './components/Numbers';
 import './App.css';
 
 
 class App extends Component {
-    
 
     state = {
         emptyArray : [],
@@ -16,8 +14,7 @@ class App extends Component {
     numbersClickHandler = (item) => {
         console.log(item);
         if(this.state.emptyArray.indexOf(item) >= 0){return}
-        this.setState(prevState => ({emptyArray: prevState.emptyArray.concat(item)}))
-        
+        this.setState(prevState => ({emptyArray: prevState.emptyArray.concat(item)})) 
     }
       
     
@@ -41,8 +38,6 @@ class App extends Component {
             <Game 
             emptyArray = {this.state.emptyArray}
             unselectNumbers = {this.unselectNumbers}
-            
-
             />
         </div>
         );
