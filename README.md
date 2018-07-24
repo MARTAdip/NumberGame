@@ -1,3 +1,8 @@
+## Small Exercise with React. Given one numbers array, i have to move these numbers in a new empty array, and replacing them back to the original array.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
